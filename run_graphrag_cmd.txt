@@ -1,0 +1,5 @@
+python run_lightrag.py   --subset medical   --mode ollama   --base_dir ./lightrag_workspace   --model_name qwen3:8b   --embed_model qwen3-embedding:0.6b   --retrieve_topk 5   --llm_base_url http://localhost:11434
+
+python run_hipporag2.py   --subset medical   --mode ollama   --base_dir ./hipporag2_workspace   --model_name qwen3:8k-hipporag   --embed_model_path qwen3-embedding:0.6b   --llm_base_url http://localhost:11434/v1
+
+Note: qwen3:8k-hipporag is based on qwen3:8b but with an alternative Modelfile (in my_experiments), which increases ntx_num to 8k.

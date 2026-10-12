@@ -1,0 +1,4 @@
+python generation_eval.py   --mode ollama   --model qwen2.5:7b   --base_url http://localhost:11434   --embedding_model qwen3-embedding:0.6b   --data_file ./results/lightrag/Medical_full/test_predictions_Medical_reversed.json   --output_file ./results/lightrag/Medical_full/evaluation_reversed_perSample.json
+
+
+python run_stats_updated.py --baseline ./results/lightrag/Medical/evaluation_qwen3_perSample.json --revert ./results/lightrag/Medical/evaluation_qwen3_reversed_perSample.json --ablation ./results/lightrag/Medical/evaluation_qwen3_reversed_sameDes_perSample.json --output ./results/lightrag/Medical/qwen3_statTests.csv

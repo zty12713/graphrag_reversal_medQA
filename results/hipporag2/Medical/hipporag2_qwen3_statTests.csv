@@ -1,0 +1,10 @@
+contrast,question_type,metric,n,mean_A,mean_B,mean_diff,p_raw,effect_r,p_corrected,significant
+Baseline → Revert,Fact Retrieval,rouge_score,1098,0.3521,0.3527,0.0006,0.4118,0.0248,0.7889,FALSE
+Baseline → Revert,Fact Retrieval,answer_correctness,1098,0.22,0.2204,0.0004,0.7889,0.0081,0.7889,FALSE
+Baseline → Revert,Complex Reasoning,rouge_score,509,0.33,0.3248,-0.0051,0.7064,0.0167,0.7889,FALSE
+Baseline → Revert,Complex Reasoning,answer_correctness,509,0.2242,0.2235,-0.0007,0.0765,0.0785,0.6885,FALSE
+Baseline → Revert,Contextual Summarize,answer_correctness,289,0.2246,0.2245,-0.0001,0.6322,0.0282,0.7889,FALSE
+Baseline → Revert,Contextual Summarize,coverage_score,289,0.573,0.5616,-0.0114,0.4063,0.0489,0.7889,FALSE
+Baseline → Revert,Creative Generation,answer_correctness,166,0.226,0.2257,-0.0004,0.6054,0.0401,0.7889,FALSE
+Baseline → Revert,Creative Generation,coverage_score,166,0.5029,0.497,-0.006,0.296,0.0811,0.7889,FALSE
+Baseline → Revert,Creative Generation,faithfulness,164,0.6213,0.6309,0.0096,0.7257,0.0274,0.7889,FALSE
